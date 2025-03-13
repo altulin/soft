@@ -1,0 +1,25 @@
+@use "@/shared/sass/variables.scss" as v;
+@use "@/shared/sass/mixins.scss" as m;
+
+.search {
+  flex: 1 1 20.5%;
+
+  @include m.mw(v.$dt) {
+    flex: 0 1 auto;
+  }
+
+  &__icon {
+    position: absolute;
+    @include m.centered("y");
+    left: 0.875rem;
+    width: 0.875rem;
+    height: 0.875rem;
+  }
+
+  &__input {
+    padding-left: 2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

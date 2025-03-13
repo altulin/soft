@@ -1,0 +1,31 @@
+@use "@/shared/sass/variables.scss" as v;
+@use "@/shared/sass/mixins.scss" as m;
+
+.select {
+  flex-shrink: 0;
+  &--all {
+    flex: 1 1 18%;
+    @include m.mw(v.$dt) {
+      flex: 0 1 auto;
+    }
+  }
+
+  &--tags {
+    flex: 1 1 18.5%;
+    @include m.mw(v.$dt) {
+      flex: 0 1 auto;
+    }
+  }
+
+  &--files {
+    flex: 1 1 10.8%;
+    @include m.mw(v.$dt) {
+      flex: 0 1 auto;
+    }
+  }
+
+  &__icon {
+    width: 0.625rem;
+    height: 0.375rem;
+  }
+}

@@ -12,7 +12,10 @@ const makeStyles = (element: string, modifier: ITextInput_Modifier) => {
   );
 };
 
-export const getClasses = (modifier: ITextInput_Modifier, isError: boolean) => {
+export const getClasses = (
+  modifier?: ITextInput_Modifier,
+  isError?: boolean,
+) => {
   return {
     control: () =>
       clsx(

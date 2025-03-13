@@ -3,16 +3,16 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://altulin.github.io/",
+  "homepage": "https://altulin.github.io/soft",
   "scripts": {
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "dev": "vite --port 3000 --host",
     "build:test": "vite build --mode development",
     "build:prod": "vite build --mode production",
-    "preview": "vite preview --port 3000",
-    "component": "generate-react component"
+    "preview": "vite preview --port 3000"
   },
   "dependencies": {
+    "@fontsource/lato": "^5.2.5",
     "@hookform/resolvers": "^4.0.0",
     "@reduxjs/toolkit": "^2.5.1",
     "@types/node": "^22.13.1",

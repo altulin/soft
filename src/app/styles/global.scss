@@ -34,9 +34,8 @@ html {
 
 body {
   scroll-behavior: smooth;
-  @include m.font("SFProText");
-  color: v.$text-dark;
-  background-color: v.$bg;
+  @include m.font("Lato");
+  background-color: #1d1e2c;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -143,18 +142,18 @@ input:-webkit-autofill:active {
 .container {
   margin-right: auto;
   margin-left: auto;
-  padding-right: v.$gap;
-  padding-left: v.$gap;
+  // padding-right: v.$gap;
+  // padding-left: v.$gap;
   // max-width: $width-dt + $gap * 2;
-  width: 80%;
-  max-width: 1600px;
+  width: 100%;
+  max-width: 1920px;
 
   @include m.mw(v.$ldt) {
-    width: 95%;
+    // width: 95%;
   }
 
   @include m.mw(v.$dt) {
-    width: auto;
+    // width: auto;
   }
 }
 

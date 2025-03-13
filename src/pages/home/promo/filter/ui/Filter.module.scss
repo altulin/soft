@@ -1,0 +1,35 @@
+@use "@/shared/sass/variables.scss" as v;
+@use "@/shared/sass/mixins.scss" as m;
+
+.filter {
+  display: flex;
+  column-gap: 1rem;
+  align-items: flex-start;
+
+  @include m.mw(v.$dt) {
+    justify-content: flex-end;
+  }
+
+  &__inner {
+    flex-grow: 1;
+    display: flex;
+    column-gap: 1rem;
+
+    &--hide {
+      position: fixed;
+      height: 100%;
+      left: 0;
+      top: 0;
+      flex-direction: column;
+      transition: transform 0.3s ease-in-out;
+      transform: translateX(-100%);
+      background-color: #252635;
+      padding: 3rem 2rem;
+      row-gap: 2rem;
+    }
+
+    &--open {
+      transform: translateX(0);
+    }
+  }
+}
